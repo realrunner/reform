@@ -1,5 +1,14 @@
 # reform [![GoDoc](https://godoc.org/gopkg.in/reform.v2-unstable?status.svg)](https://godoc.org/gopkg.in/reform.v2-unstable) [![Build Status](https://travis-ci.org/go-reform/reform.svg?branch=v2-unstable)](https://travis-ci.org/go-reform/reform) [![Coverage Status](https://coveralls.io/repos/github/go-reform/reform/badge.svg?branch=v2-unstable)](https://coveralls.io/github/go-reform/reform?branch=v2-unstable) [![Go Report Card](https://goreportcard.com/badge/gopkg.in/reform.v2-unstable)](https://goreportcard.com/report/gopkg.in/reform.v2-unstable)
 
+Note about `v2-unstable` branch.
+
+`v2` will likely introduce some great new feature like support for non-SQL databases,
+and also breaking API changes like better errors. See [issues](https://github.com/go-reform/reform/issues?q=milestone%3Av2) for details.
+However, `v2` is almost like Go 2: it may happen eventually, but not currently planned.
+In the meantime, I will continue to develop and maintain `v1`.
+
+---
+
 A better ORM for Go.
 
 It uses non-empty interfaces, code generation (`go generate`) and initialization-time reflection
