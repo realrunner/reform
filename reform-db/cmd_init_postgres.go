@@ -35,6 +35,9 @@ func goTypePostgres(sqlType string, nullable bool) (typ string, pack string, com
 	case "boolean":
 		return maybePointer("bool", nullable), "", ""
 
+	case "uuid":
+		return maybePointer("string", nullable), "", ""
+
 	default:
 		// logger.Fatalf("unhandled PostgreSQL type %q", sqlType)
 		return "[]byte", "", fmt.Sprintf("// FIXME unhandled database type %q", sqlType) // never a pointer
